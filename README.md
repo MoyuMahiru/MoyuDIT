@@ -1,98 +1,52 @@
-# Photo Ingest Studio
+# MoyuDIT
 
-面向摄影师的跨平台桌面导入工具原型。定位是“安全导入器”，不是图库管理器。它负责把储存卡中的照片批量拷贝到电脑，按拍摄时间归档，按已有星级筛选，并在导入时执行哈希校验。
+面向摄影师的桌面导入工具。它负责把储存卡里的照片安全拷到电脑，按拍摄时间归档，支持评分筛选、双目标备份、导入校验、导入恢复和可视化导入报告。
 
-## 当前状态
+## 定位
 
-这个仓库当前包含：
+- 这是导入器，不是图库管理器。
+- 优先保证“导得稳、校验清楚、目录整齐”。
+- 工作流围绕 macOS / 桌面摄影导入场景设计。
 
-- `React + Vite` 的摄影导入流程前端
-- `Tauri + Rust` 的扫描、预演、导入后端
+## 主要功能
 
-当前机器已经安装了 `Rust` / `Cargo`，可以继续把 Tauri 后端实现接完整。
+- 自动识别可移动卷和常见相机目录
+- 读取素材并显示实时分析进度
+- 按年份 / 年月 / 日期 / 日期 + 机型归档
+- 按日期范围、已有星级、素材类型筛选导入
+- 支持仅导入 `RAW`、仅导入 `JPEG`、或 `RAW + JPEG` 成对素材
+- 双目标导入，可同时写入主目录和备份目录
+- 导入时执行 `MD5` / `BLAKE3` 校验
+- 导入失败原因分类显示
+- 支持导入中取消与下次恢复
+- 缩略图预览、单张放大预览、临时打星和纳入/排除
+- 导入预设、本地历史记录、重复导入提醒
+- 导出可视化 PDF 报告
 
-## 功能目标
+## macOS 安装
 
-- 选择储存卡或导入源目录
-- 扫描 JPG / RAW 文件
-- 读取 EXIF 拍摄时间
-- 按日期或日期 + 机型归档
-- 根据已有星级筛选导入文件
-- 导入时执行 MD5 / BLAKE3 校验
-- 导入结果写入 SQLite 历史记录
-- 重复文件检测和跳过策略
+当前提供的安装包：
 
-## 目录结构
+- [Photo Ingest Studio_0.1.0_aarch64_fixed.dmg](./src-tauri/target/release/bundle/dmg/Photo%20Ingest%20Studio_0.1.0_aarch64_fixed.dmg)
 
-```text
-.
-├── docs/
-│   └── architecture.md
-├── src/
-│   ├── App.tsx
-│   ├── main.tsx
-│   ├── api.ts
-│   ├── styles/
-│   └── types.ts
-├── src-tauri/
-│   ├── Cargo.toml
-│   ├── tauri.conf.json
-│   └── src/
-│       ├── commands.rs
-│       ├── lib.rs
-│       └── main.rs
-├── index.html
-├── package.json
-└── vite.config.ts
-```
+安装方式：
 
-## 建议开发路线
+1. 打开 `dmg`
+2. 将 `Photo Ingest Studio.app` 拖到 `Applications`
+3. 首次运行如果被系统拦截，到“系统设置 > 隐私与安全性”里放行
 
-### 第 1 阶段：完成安全导入主链路
+说明：
 
-- 选择来源目录或储存卡
-- 分析卡内图片
-- 生成导入计划
-- 执行拷贝
-- 计算并比对哈希
+- 当前安装包是未签名版本，适合自用测试
+- Apple Silicon 机器优先使用当前 `aarch64` 安装包
 
-### 第 2 阶段：补齐摄影工作流
+## 开发环境
 
-- 只导入已有评级照片
-- XMP sidecar 写入
-- 重复导入检测
-- 导入历史与失败重试
+### 依赖
 
-### 第 3 阶段：提升效率
-
-- 缩略图缓存
-- 多线程导入
-- 断点续导
-- 同步双目标磁盘
-
-## 环境安装
-
-### 1. 安装 Rust
-
-macOS:
-
-```bash
-brew install rust
-```
-
-Windows:
-
-安装 [Rustup](https://rustup.rs/)
-
-### 2. 安装前端依赖
-
-```bash
-npm install
-```
-
-### 3. 可选安装 ExifTool
-
-推荐安装，用来读取 RAW/JPG 的拍摄时间、机型、评级元数据。
+- Node.js 20+
+- Rust / Cargo
+- 推荐安装 `ExifTool`
 
 macOS:
 
@@ -100,45 +54,69 @@ macOS:
 brew install exiftool
 ```
 
-Windows:
+### 启动
 
-安装 [ExifTool](https://exiftool.org/)
-
-### 4. 启动开发环境
-
-前端预览：
+安装依赖：
 
 ```bash
-npm run dev
+npm install
 ```
 
-Tauri 桌面版：
+启动桌面开发版：
 
 ```bash
 npm run tauri dev
 ```
 
-## 当前交互流程
+只启动前端预览：
 
-现在的界面按下面 4 步组织：
+```bash
+npm run dev
+```
 
-1. 选择来源
-2. 分析素材
-3. 确认导入方案
-4. 开始导入
+## 打包
 
-也就是说，用户不需要先理解很多技术参数，再开始导入。
+生成 macOS 安装包：
 
-## 后续需要优先实现的后端命令
+```bash
+npm exec tauri -- build --bundles dmg
+```
 
-- `scan_card`
-- `preview_import`
-- `run_import`
+如果 Tauri 自带的 `dmg` 美化脚本在本机环境下失败，当前仓库也可以用 `hdiutil create` 从已生成的 `.app` 手工封装安装包。
 
-这三个命令已经在 [src-tauri/src/commands.rs](/Users/moyumahiru/Documents/dit/src-tauri/src/commands.rs) 里有可继续扩展的实现：
+## 项目结构
 
-- `scan_card`：扫描目录并识别支持的照片格式
-- `preview_import`：按模板预演目标路径
-- `run_import`：执行复制、重复处理和哈希校验
+```text
+.
+├── docs/
+├── src/
+│   ├── App.tsx
+│   ├── api.ts
+│   ├── styles/
+│   └── types.ts
+├── src-tauri/
+│   ├── icons/
+│   ├── src/
+│   │   ├── commands.rs
+│   │   ├── lib.rs
+│   │   └── main.rs
+│   ├── Cargo.toml
+│   └── tauri.conf.json
+└── README.md
+```
 
-当前如果系统没安装 `ExifTool`，会自动回退到文件修改时间，不会阻塞导入流程。
+## 当前版本
+
+`v0.1.0`
+
+包含：
+
+- macOS 图标与安装包
+- 导入崩溃修复
+- 完整导入主链路
+- 预览、筛选、恢复、报告与历史
+
+## 备注
+
+界面标题：`摄影导入台`  
+署名字样：`摸鱼开发`
