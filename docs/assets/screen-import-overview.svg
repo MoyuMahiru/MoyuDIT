@@ -1,0 +1,71 @@
+<svg width="1440" height="960" viewBox="0 0 1440 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="960" rx="40" fill="#12162B"/>
+  <rect x="24" y="24" width="1392" height="912" rx="34" fill="#181D36" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="52" y="52" width="316" height="856" rx="28" fill="rgba(8,10,20,0.68)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="88" y="112" fill="#CAC3FF" font-size="18" font-family="SF Pro Display, PingFang SC, sans-serif" letter-spacing="4">Photo Ingest Studio</text>
+  <text x="88" y="160" fill="white" font-size="44" font-weight="700" font-family="SF Pro Display, PingFang SC, sans-serif">摄影导入台</text>
+  <text x="88" y="198" fill="rgba(255,255,255,0.72)" font-size="18" font-family="SF Pro Display, PingFang SC, sans-serif">摸鱼开发</text>
+
+  <rect x="82" y="252" width="256" height="64" rx="20" fill="url(#active)"/>
+  <text x="110" y="293" fill="white" font-size="22" font-weight="700" font-family="SF Pro Display, PingFang SC, sans-serif">1. 选择来源</text>
+  <rect x="82" y="332" width="256" height="64" rx="20" fill="rgba(255,255,255,0.06)"/>
+  <text x="110" y="373" fill="white" font-size="22" font-family="SF Pro Display, PingFang SC, sans-serif">2. 读取素材</text>
+  <rect x="82" y="412" width="256" height="64" rx="20" fill="rgba(255,255,255,0.06)"/>
+  <text x="110" y="453" fill="white" font-size="22" font-family="SF Pro Display, PingFang SC, sans-serif">3. 导入设置</text>
+  <rect x="82" y="492" width="256" height="64" rx="20" fill="rgba(255,255,255,0.06)"/>
+  <text x="110" y="533" fill="white" font-size="22" font-family="SF Pro Display, PingFang SC, sans-serif">4. 开始导入</text>
+
+  <rect x="404" y="52" width="984" height="84" rx="26" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="444" y="104" fill="white" font-size="26" font-weight="700" font-family="SF Pro Display, PingFang SC, sans-serif">导入设置</text>
+  <text x="1094" y="104" fill="rgba(255,255,255,0.72)" font-size="18" font-family="SF Pro Display, PingFang SC, sans-serif">可移动介质 · DCIM</text>
+
+  <rect x="404" y="164" width="476" height="344" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="438" y="212" fill="white" font-size="24" font-weight="700" font-family="SF Pro Display, PingFang SC, sans-serif">导入概览</text>
+  <rect x="438" y="240" width="176" height="98" rx="20" fill="rgba(255,255,255,0.08)"/>
+  <rect x="630" y="240" width="216" height="98" rx="20" fill="rgba(93,72,255,0.24)"/>
+  <rect x="438" y="354" width="176" height="98" rx="20" fill="rgba(255,255,255,0.08)"/>
+  <rect x="630" y="354" width="216" height="98" rx="20" fill="rgba(255,255,255,0.08)"/>
+  <text x="466" y="276" fill="rgba(255,255,255,0.62)" font-size="16" font-family="SF Pro Display, PingFang SC, sans-serif">来源</text>
+  <text x="466" y="312" fill="white" font-size="34" font-weight="700" font-family="SF Pro Display, PingFang SC, sans-serif">Untitled</text>
+  <text x="660" y="276" fill="rgba(255,255,255,0.62)" font-size="16" font-family="SF Pro Display, PingFang SC, sans-serif">将导入</text>
+  <text x="660" y="312" fill="white" font-size="34" font-weight="700" font-family="SF Pro Display, PingFang SC, sans-serif">1,248 张</text>
+  <text x="466" y="390" fill="rgba(255,255,255,0.62)" font-size="16" font-family="SF Pro Display, PingFang SC, sans-serif">主目录</text>
+  <text x="466" y="426" fill="white" font-size="28" font-weight="700" font-family="SF Pro Display, PingFang SC, sans-serif">2026/03/27</text>
+  <text x="660" y="390" fill="rgba(255,255,255,0.62)" font-size="16" font-family="SF Pro Display, PingFang SC, sans-serif">校验方式</text>
+  <text x="660" y="426" fill="white" font-size="28" font-weight="700" font-family="SF Pro Display, PingFang SC, sans-serif">MD5</text>
+
+  <rect x="912" y="164" width="476" height="344" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="946" y="212" fill="white" font-size="24" font-weight="700" font-family="SF Pro Display, PingFang SC, sans-serif">来源与筛选</text>
+  <rect x="946" y="246" width="408" height="62" rx="18" fill="rgba(255,255,255,0.08)"/>
+  <text x="976" y="286" fill="white" font-size="20" font-family="SF Pro Display, PingFang SC, sans-serif">外置 SSD · DCIM</text>
+  <rect x="946" y="326" width="196" height="62" rx="18" fill="rgba(255,255,255,0.08)"/>
+  <rect x="1158" y="326" width="196" height="62" rx="18" fill="rgba(255,255,255,0.08)"/>
+  <rect x="946" y="406" width="126" height="54" rx="16" fill="rgba(93,72,255,0.28)"/>
+  <rect x="1088" y="406" width="126" height="54" rx="16" fill="rgba(255,255,255,0.08)"/>
+  <rect x="1230" y="406" width="124" height="54" rx="16" fill="rgba(255,255,255,0.08)"/>
+  <text x="986" y="442" fill="white" font-size="18" font-family="SF Pro Display, PingFang SC, sans-serif">按日期</text>
+  <text x="1190" y="442" fill="white" font-size="18" font-family="SF Pro Display, PingFang SC, sans-serif">仅 RAW</text>
+  <text x="1268" y="442" fill="white" font-size="18" font-family="SF Pro Display, PingFang SC, sans-serif">3 星+</text>
+
+  <rect x="404" y="536" width="984" height="336" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="438" y="584" fill="white" font-size="24" font-weight="700" font-family="SF Pro Display, PingFang SC, sans-serif">素材预览</text>
+  <g>
+    <rect x="438" y="620" width="150" height="114" rx="20" fill="rgba(255,255,255,0.10)"/>
+    <rect x="606" y="620" width="150" height="114" rx="20" fill="rgba(93,72,255,0.30)"/>
+    <rect x="774" y="620" width="150" height="114" rx="20" fill="rgba(255,255,255,0.10)"/>
+    <rect x="942" y="620" width="150" height="114" rx="20" fill="rgba(255,255,255,0.10)"/>
+    <rect x="1110" y="620" width="150" height="114" rx="20" fill="rgba(255,255,255,0.10)"/>
+    <rect x="438" y="748" width="150" height="90" rx="20" fill="rgba(255,255,255,0.08)"/>
+    <rect x="606" y="748" width="150" height="90" rx="20" fill="rgba(255,255,255,0.08)"/>
+    <rect x="774" y="748" width="150" height="90" rx="20" fill="rgba(255,255,255,0.08)"/>
+    <rect x="942" y="748" width="150" height="90" rx="20" fill="rgba(255,255,255,0.08)"/>
+    <rect x="1110" y="748" width="150" height="90" rx="20" fill="rgba(255,255,255,0.08)"/>
+  </g>
+
+  <defs>
+    <linearGradient id="active" x1="82" y1="252" x2="338" y2="316" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#280CFF"/>
+      <stop offset="1" stop-color="#9386FF"/>
+    </linearGradient>
+  </defs>
+</svg>

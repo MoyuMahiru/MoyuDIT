@@ -1,0 +1,60 @@
+<svg width="1440" height="960" viewBox="0 0 1440 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="960" rx="40" fill="#0C1020"/>
+  <rect x="26" y="26" width="1388" height="908" rx="34" fill="#131931" stroke="rgba(255,255,255,0.08)"/>
+
+  <rect x="64" y="64" width="1312" height="80" rx="24" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="104" y="114" fill="white" font-size="28" font-weight="700" font-family="SF Pro Display, PingFang SC, sans-serif">单张预览</text>
+  <text x="1140" y="114" fill="rgba(255,255,255,0.72)" font-size="18" font-family="SF Pro Display, PingFang SC, sans-serif">空格纳入/排除 · 0-5 打星</text>
+
+  <rect x="64" y="174" width="912" height="722" rx="28" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="108" y="218" width="824" height="634" rx="24" fill="url(#photo)"/>
+  <circle cx="148" cy="536" r="28" fill="rgba(255,255,255,0.16)"/>
+  <path d="M157 521L141 536L157 551" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="892" cy="536" r="28" fill="rgba(255,255,255,0.16)"/>
+  <path d="M883 521L899 536L883 551" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="1006" y="174" width="370" height="722" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="1042" y="230" fill="white" font-size="26" font-weight="700" font-family="SF Pro Display, PingFang SC, sans-serif">A001.CR3</text>
+  <text x="1042" y="266" fill="rgba(255,255,255,0.68)" font-size="18" font-family="SF Pro Display, PingFang SC, sans-serif">Canon EOS R5 · 2026-03-27 18:42</text>
+
+  <rect x="1042" y="302" width="132" height="52" rx="16" fill="rgba(93,72,255,0.30)"/>
+  <text x="1074" y="336" fill="white" font-size="18" font-weight="700" font-family="SF Pro Display, PingFang SC, sans-serif">已选中</text>
+  <rect x="1188" y="302" width="152" height="52" rx="16" fill="rgba(255,255,255,0.08)"/>
+  <text x="1228" y="336" fill="white" font-size="18" font-family="SF Pro Display, PingFang SC, sans-serif">成对 JPEG</text>
+
+  <text x="1042" y="410" fill="rgba(255,255,255,0.72)" font-size="18" font-family="SF Pro Display, PingFang SC, sans-serif">临时星级</text>
+  <g>
+    <rect x="1042" y="434" width="52" height="52" rx="16" fill="rgba(93,72,255,0.32)"/>
+    <rect x="1106" y="434" width="52" height="52" rx="16" fill="rgba(93,72,255,0.32)"/>
+    <rect x="1170" y="434" width="52" height="52" rx="16" fill="rgba(93,72,255,0.32)"/>
+    <rect x="1234" y="434" width="52" height="52" rx="16" fill="rgba(255,255,255,0.08)"/>
+    <rect x="1298" y="434" width="52" height="52" rx="16" fill="rgba(255,255,255,0.08)"/>
+    <text x="1060" y="468" fill="white" font-size="22" font-family="SF Pro Display, PingFang SC, sans-serif">★</text>
+    <text x="1124" y="468" fill="white" font-size="22" font-family="SF Pro Display, PingFang SC, sans-serif">★</text>
+    <text x="1188" y="468" fill="white" font-size="22" font-family="SF Pro Display, PingFang SC, sans-serif">★</text>
+    <text x="1252" y="468" fill="rgba(255,255,255,0.72)" font-size="22" font-family="SF Pro Display, PingFang SC, sans-serif">☆</text>
+    <text x="1316" y="468" fill="rgba(255,255,255,0.72)" font-size="22" font-family="SF Pro Display, PingFang SC, sans-serif">☆</text>
+  </g>
+
+  <text x="1042" y="546" fill="rgba(255,255,255,0.72)" font-size="18" font-family="SF Pro Display, PingFang SC, sans-serif">快捷操作</text>
+  <rect x="1042" y="570" width="308" height="60" rx="18" fill="url(#primary)"/>
+  <text x="1140" y="608" fill="white" font-size="20" font-weight="700" font-family="SF Pro Display, PingFang SC, sans-serif">纳入这张</text>
+  <rect x="1042" y="646" width="308" height="60" rx="18" fill="rgba(255,255,255,0.08)"/>
+  <text x="1140" y="684" fill="white" font-size="20" font-family="SF Pro Display, PingFang SC, sans-serif">排除这张</text>
+  <rect x="1042" y="722" width="148" height="56" rx="18" fill="rgba(255,255,255,0.08)"/>
+  <rect x="1202" y="722" width="148" height="56" rx="18" fill="rgba(255,255,255,0.08)"/>
+  <text x="1080" y="757" fill="white" font-size="18" font-family="SF Pro Display, PingFang SC, sans-serif">上一张</text>
+  <text x="1240" y="757" fill="white" font-size="18" font-family="SF Pro Display, PingFang SC, sans-serif">下一张</text>
+
+  <defs>
+    <linearGradient id="primary" x1="1042" y1="570" x2="1350" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#280CFF"/>
+      <stop offset="1" stop-color="#9386FF"/>
+    </linearGradient>
+    <linearGradient id="photo" x1="152" y1="218" x2="888" y2="852" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2D235D"/>
+      <stop offset="0.4" stop-color="#4D5F84"/>
+      <stop offset="1" stop-color="#B6B7BF"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -2,6 +2,8 @@
 
 面向摄影师的桌面导入工具。它负责把储存卡里的照片安全拷到电脑，按拍摄时间归档，支持评分筛选、双目标备份、导入校验、导入恢复和可视化导入报告。
 
+![MoyuDIT Cover](docs/assets/repo-cover.svg)
+
 ## 定位
 
 - 这是导入器，不是图库管理器。
@@ -22,6 +24,16 @@
 - 缩略图预览、单张放大预览、临时打星和纳入/排除
 - 导入预设、本地历史记录、重复导入提醒
 - 导出可视化 PDF 报告
+
+## 界面预览
+
+### 导入总览
+
+![MoyuDIT Import Overview](docs/assets/screen-import-overview.svg)
+
+### 单张预览
+
+![MoyuDIT Lightbox Preview](docs/assets/screen-lightbox-preview.svg)
 
 ## macOS 安装
 
